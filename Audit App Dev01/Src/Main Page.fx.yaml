@@ -1,0 +1,213 @@
+"'Main Page' As screen":
+
+    Image5 As image:
+        DisplayMode: =DisplayMode.View
+        Height: =675
+        Image: ='iStock-1072111648'
+        ImagePosition: =ImagePosition.Stretch
+        TabIndex: =1
+        Width: =1364
+        X: =2
+        Y: =93
+        ZIndex: =1
+
+    Label1_9 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =18
+        Text: ="AUDIT APPLICATION"
+        Visible: =varTabSelected 
+        Width: =1364
+        X: =2
+        Y: =26
+        ZIndex: =2
+
+    Icon1_2 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.Home
+        OnSelect: =
+        Width: =37
+        X: =9
+        Y: =40
+        ZIndex: =3
+
+    Label2_7 As label:
+        Align: =Align.Right
+        Color: =RGBA(179, 179, 179, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =16
+        Text: ="ACTIVE Linea Intimo - IE"
+        Width: =270
+        X: =1050
+        Y: =53
+        ZIndex: =9
+
+    Image1_7 As image:
+        Height: =44
+        Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+        RadiusTopLeft: =5
+        Width: =226
+        X: =860
+        Y: =40
+        ZIndex: =10
+
+    Label2_14 As label:
+        Align: =Align.Right
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Text: ="IE DIGITALIZATION"
+        Visible: =varTabSelected
+        Width: =180
+        X: =1160
+        Y: =720
+        ZIndex: =11
+
+    Label2_3 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        Size: =12
+        Text: ="Designed by "
+        Visible: =varTabSelected 
+        X: =1193
+        Y: =698
+        ZIndex: =12
+
+    Icon5_2 As icon.CancelBadge:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1325
+        Y: =30
+        ZIndex: =13
+
+    Icon6 As icon.Settings:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.Settings
+        OnSelect: |-
+            =Navigate(Settings);
+            Set(varAdminButton1,false);
+            Set(varSectionAndModule,false);
+            Set(varAdminMsg,false);
+            Set(varStyle,false)
+        Width: =37
+        X: =55
+        Y: =40
+        ZIndex: =15
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =16
+
+        Button2_1 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: =Navigate('FABRIC MILL')
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="Fabric Mill"
+            Width: =180
+            X: =373
+            Y: =236
+            ZIndex: =4
+
+        Button2_2 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: =Navigate(VE)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="VE"
+            Width: =180
+            X: =659
+            Y: =122
+            ZIndex: =5
+
+        Button2_3 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: |
+                =Navigate(SE)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="SE"
+            Width: =180
+            X: =659
+            Y: =340
+            ZIndex: =6
+
+        Button2_4 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: =Navigate(COSTING)
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="Costing"
+            Width: =180
+            X: =373
+            Y: =454
+            ZIndex: =7
+
+        Button2_5 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: |-
+                =ClearCollect(Data5S,'Audit App 5S');
+                Set(VarFirstName,Last(Sort(Data5S, ID, SortOrder.Ascending)).'Fist Auditor'.Value) And 
+                Set(VarSecondName,Last(Sort(Data5S, ID, SortOrder.Ascending)).'Second Auditor'.Value); 
+                Set(varVisibleEligibility,false);
+                Navigate('5S Audit') && Set(varTabSelected,8) && NewForm(Form4) && Refresh('Audit App 5S')
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="5S"
+            Width: =180
+            X: =659
+            Y: =570
+            ZIndex: =8
+
+        Button2_7 As button:
+            Fill: =RGBA(0, 134, 208, 1)
+            Height: =180
+            OnSelect: |-
+                =Navigate('STW Audit') And Set(varTabSelected ,1) ;
+                Refresh('Audit App STW');
+                Refresh('Lockup Details');
+                Refresh('Section And Module')
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Size: =18
+            Text: ="STW Audit"
+            Width: =180
+            X: =119
+            Y: =340
+            ZIndex: =14
+

@@ -1,0 +1,129 @@
+"'FABRIC MILL' As screen":
+
+    Image5_4 As image:
+        Height: =675
+        Image: ='iStock-1072111648'
+        ImagePosition: =ImagePosition.Stretch
+        Width: =1364
+        X: =2
+        Y: =93
+        ZIndex: =1
+
+    Label1_16 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =18
+        Text: ="FABRIC MILL"
+        Visible: =varTabSelected 
+        Width: =1364
+        X: =2
+        Y: =26
+        ZIndex: =2
+
+    Icon1_5 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Main Page')
+        Width: =37
+        X: =9
+        Y: =40
+        ZIndex: =3
+
+    Icon2_4 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Main Page')
+        Width: =37
+        X: =60
+        Y: =40
+        ZIndex: =4
+
+    Button2_9 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =180
+        OnSelect: =Navigate('Carry Over') And NewForm(Form5) And NewForm(Form8) And Set(varFM,1) And Refresh('Fabric Mill - Operation Audit')
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =18
+        Text: ="Carry Over"
+        Width: =180
+        X: =378
+        Y: =224
+        ZIndex: =5
+
+    Image1_11 As image:
+        Height: =44
+        Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+        RadiusTopLeft: =5
+        Width: =226
+        X: =860
+        Y: =40
+        ZIndex: =6
+
+    Label2_18 As label:
+        Align: =Align.Right
+        Color: =RGBA(179, 179, 179, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =16
+        Text: ="ACTIVE Linea Intimo - IE"
+        Width: =270
+        X: =1050
+        Y: =53
+        ZIndex: =7
+
+    Label2_20 As label:
+        Align: =Align.Right
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Text: ="IE DIGITALIZATION"
+        Visible: =varTabSelected
+        Width: =180
+        X: =1160
+        Y: =720
+        ZIndex: =8
+
+    Label2_19 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        Size: =12
+        Text: ="Designed by "
+        Visible: =varTabSelected 
+        X: =1193
+        Y: =698
+        ZIndex: =9
+
+    Icon5_6 As icon.CancelBadge:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1325
+        Y: =30
+        ZIndex: =10
+
+    Button2_30 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =180
+        OnSelect: =Navigate('Carry Over') And NewForm(Form5) And NewForm(Form8) And Set(varFM,2) And Refresh('Audit App Fabric Mill - New Style')
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =18
+        Text: ="New Style"
+        Width: =180
+        X: =378
+        Y: =448
+        ZIndex: =11
+

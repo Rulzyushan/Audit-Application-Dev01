@@ -1,0 +1,120 @@
+"'5S' As screen":
+    Fill: =RGBA(237, 237, 237, 1)
+
+    Label1_11 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =18
+        Text: ="5S"
+        Visible: =varTabSelected 
+        Width: =1364
+        X: =2
+        Y: =26
+        ZIndex: =2
+
+    Icon1_3 As icon.Home:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.Home
+        OnSelect: =Navigate('Main Page')
+        Width: =37
+        X: =9
+        Y: =40
+        ZIndex: =3
+
+    Icon2_2 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('Main Page')
+        Width: =37
+        X: =60
+        Y: =40
+        ZIndex: =4
+
+    Image1_9 As image:
+        Height: =44
+        Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+        RadiusTopLeft: =5
+        Width: =226
+        X: =860
+        Y: =40
+        ZIndex: =6
+
+    Label2_8 As label:
+        Align: =Align.Right
+        Color: =RGBA(179, 179, 179, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =16
+        Text: ="ACTIVE Linea Intimo - IE"
+        Width: =270
+        X: =1050
+        Y: =53
+        ZIndex: =7
+
+    Label2_16 As label:
+        Align: =Align.Right
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Text: ="IE DIGITALIZATION"
+        Visible: =varTabSelected
+        Width: =180
+        X: =1160
+        Y: =720
+        ZIndex: =8
+
+    Label2_5 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        Size: =12
+        Text: ="Designed by "
+        Visible: =varTabSelected 
+        X: =1193
+        Y: =698
+        ZIndex: =9
+
+    Icon5_4 As icon.CancelBadge:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1325
+        Y: =30
+        ZIndex: =10
+
+    Button2_29 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =180
+        OnSelect: |-
+            =//If(
+            //    LookUp('IE Department Name list',User().Email='Email IE','Responsible For 5S'.Value) = "5S" 
+            //    ,
+                
+            //    Navigate('5S Audit') && Set(varTabSelected,8) && NewForm(Form4) && Refresh('Audit App 5S'),
+                
+            //    Set(varDisplayEligibility,"You don't have permission to access !!!, If you got notification through your mail
+            //    for ready for next 5S audit, please make sure that you currently signing with your own mail.") && 
+             //   Set(varVisibleEligibility,true)
+            //)
+            //LookUp('IE Department Name list','Email Address'= VarFirstName,'Email IE') = User().Email Or 
+            //    LookUp('IE Department Name list','Email Address'=VarSecondName,'Email IE') = User().Email
+            
+            Navigate('5S Audit') && Set(varTabSelected,8) && NewForm(Form4) && Refresh('Audit App 5S')
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Size: =18
+        Text: ="5S Audit"
+        Width: =180
+        X: =210
+        Y: =246
+        ZIndex: =12
+

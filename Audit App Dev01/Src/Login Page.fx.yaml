@@ -1,0 +1,154 @@
+"'Login Page' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(255, 255, 255, 1)
+    ImagePosition: =ImagePosition.Fill
+
+    Label1_8 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(141, 198, 63, 1)
+        Fill: =RGBA(0, 134, 208, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =18
+        Text: ="AUDIT APPLICATION"
+        Visible: =varTabSelected 
+        Width: =1364
+        X: =2
+        Y: =26
+        ZIndex: =1
+
+    "'User name' As text":
+        BorderColor: =RGBA(0, 134, 208, 1)
+        Default: =""
+        Height: =69
+        HintText: ="User Name"
+        Width: =435
+        X: =852
+        Y: =408
+        ZIndex: =3
+
+    Password As text:
+        BorderColor: =RGBA(0, 134, 208, 1)
+        Default: =""
+        Height: =69
+        HintText: ="Password"
+        Mode: =TextMode.Password
+        Width: =435
+        X: =852
+        Y: =522
+        ZIndex: =4
+
+    Image2 As image:
+        Height: =191
+        Image: =loginIcon
+        TabIndex: =0
+        Width: =240
+        X: =949
+        Y: =176
+        ZIndex: =6
+
+    Label1_12 As label:
+        Align: =Align.Center
+        Color: =RGBA(116, 116, 116, 1)
+        DisabledFill: =RGBA(141, 198, 63, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =59
+        Size: =30
+        Text: ="Welcome!"
+        Visible: =varTabSelected 
+        Width: =601
+        X: =764
+        Y: =106
+        ZIndex: =11
+
+    Label2_11 As label:
+        Align: =Align.Right
+        Color: =RGBA(179, 179, 179, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =16
+        Text: ="ACTIVE Linea Intimo - IE"
+        Width: =270
+        X: =1050
+        Y: =53
+        ZIndex: =12
+
+    Image1_8 As image:
+        Height: =44
+        Image: ='mas-holdings-logo-2ACA338CD6-seeklogo.com'
+        RadiusTopLeft: =5
+        Width: =226
+        X: =860
+        Y: =40
+        ZIndex: =13
+
+    Label2_15 As label:
+        Align: =Align.Right
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Text: ="IE DIGITALIZATION"
+        Visible: =varTabSelected
+        Width: =180
+        X: =1160
+        Y: =720
+        ZIndex: =14
+
+    Label2_4 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        Size: =12
+        Text: ="Designed by "
+        Visible: =varTabSelected 
+        X: =1193
+        Y: =698
+        ZIndex: =15
+
+    Image1 As image:
+        Height: =717
+        Image: =Digitalization
+        TabIndex: =0
+        Width: =817
+        X: =2
+        Y: =40
+        ZIndex: =16
+
+    Button5_2 As button:
+        Fill: =RGBA(0, 134, 208, 1)
+        Height: =39
+        OnSelect: |
+            =If(
+                Upper('User name'.Text) = "INTIMOIE" And
+                Upper(Password.Text) = "IE12345",
+                Navigate(
+                    'Main Page',
+                    ScreenTransition.None
+                ),
+                
+                Notify(
+                    "Invalid Password or User Name!!! Please Enter a Valid Password and User Name",
+                    NotificationType.Error
+                )
+            );
+            Reset('User name');
+            Reset(Password);
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Login"
+        X: =1127
+        Y: =636
+        ZIndex: =17
+
+    Icon5_3 As icon.CancelBadge:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.CancelBadge
+        OnSelect: =Exit()
+        Width: =37
+        X: =1325
+        Y: =30
+        ZIndex: =18
+

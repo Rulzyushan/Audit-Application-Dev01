@@ -1,0 +1,177 @@
+{
+  "26686150-691b-4ffc-a375-b28998cac7b6": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "f9e1edfc-c50e-4585-83f0-4eb1af2726f7": {
+          "value": "shared_onedriveforbusiness_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f5dd1afa-a41e-4bf4-b584-f2849cb9fe2e"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_onedriveforbusiness_1": {
+          "value": "f9e1edfc-c50e-4585-83f0-4eb1af2726f7"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f5dd1afa-a41e-4bf4-b584-f2849cb9fe2e"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "5SAuditSheet-IEPDFGenerator"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness_1": "f9e1edfc-c50e-4585-83f0-4eb1af2726f7"
+    },
+    "dependents": [],
+    "id": "26686150-691b-4ffc-a375-b28998cac7b6"
+  },
+  "336e6af7-919a-49a3-b360-578f7c69a19c": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://massl.sharepoint.com/sites/LineaIntimo/IEDigitalization": {
+        "dataSources": {
+          "Audit App 5S": {
+            "tableName": "f6d0336d-d226-43fc-adee-26a940d6ba8e"
+          },
+          "Audit App 5S Image collection": {
+            "tableName": "e0708273-7d4c-4902-8e4a-933901288095"
+          },
+          "Audit App Fabric Mill - New Style": {
+            "tableName": "0bada93c-1f1b-4749-8dc9-a19db8b1c46d"
+          },
+          "Audit App STW": {
+            "tableName": "407001b2-acaa-4f55-b7d9-943e304827d4"
+          },
+          "Audit App STW_1": {
+            "tableName": "407001b2-acaa-4f55-b7d9-943e304827d4"
+          },
+          "Fabric Mill - Operation Audit": {
+            "tableName": "8e28579e-c2a7-4079-92d7-d1bcbca7072e"
+          },
+          "IE Department Name list": {
+            "tableName": "e04ed66a-917d-4753-9d49-b3e9d545da5c"
+          },
+          "Lockup Details": {
+            "tableName": "2b1df5cc-83fa-46c6-95b0-d76fccb62fac"
+          },
+          "Opertions": {
+            "tableName": "3132a030-b12b-4db8-b87a-b3b171c9d703"
+          },
+          "Section And Module": {
+            "tableName": "733cf7d7-d707-40fb-94b0-103039053eea"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Audit App STW",
+      "Lockup Details",
+      "Opertions",
+      "Section And Module",
+      "Audit App STW_1",
+      "Fabric Mill - Operation Audit",
+      "Audit App 5S",
+      "Audit App 5S Image collection",
+      "Audit App Fabric Mill - New Style",
+      "IE Department Name list"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "336e6af7-919a-49a3-b360-578f7c69a19c"
+  },
+  "6f59b0d7-f5e3-47b1-899d-c8628e27bcc9": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3326/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "d252607d-725a-4857-9639-fb826b4ea3fe"
+    ],
+    "id": "6f59b0d7-f5e3-47b1-899d-c8628e27bcc9"
+  },
+  "d252607d-725a-4857-9639-fb826b4ea3fe": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "6f59b0d7-f5e3-47b1-899d-c8628e27bcc9": {
+          "value": "shared_office365"
+        },
+        "f9e1edfc-c50e-4585-83f0-4eb1af2726f7": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9067fd84-0aec-4214-b420-63b1ac13fe98"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_office365": {
+          "value": "6f59b0d7-f5e3-47b1-899d-c8628e27bcc9"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "f9e1edfc-c50e-4585-83f0-4eb1af2726f7"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9067fd84-0aec-4214-b420-63b1ac13fe98"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppV2->Getfilecontent,Sendanemail(V2)"
+    ],
+    "dependencies": {
+      "shared_office365": "6f59b0d7-f5e3-47b1-899d-c8628e27bcc9",
+      "shared_onedriveforbusiness": "f9e1edfc-c50e-4585-83f0-4eb1af2726f7"
+    },
+    "dependents": [],
+    "id": "d252607d-725a-4857-9639-fb826b4ea3fe"
+  },
+  "f9e1edfc-c50e-4585-83f0-4eb1af2726f7": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3310/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "26686150-691b-4ffc-a375-b28998cac7b6",
+      "d252607d-725a-4857-9639-fb826b4ea3fe"
+    ],
+    "id": "f9e1edfc-c50e-4585-83f0-4eb1af2726f7"
+  }
+}

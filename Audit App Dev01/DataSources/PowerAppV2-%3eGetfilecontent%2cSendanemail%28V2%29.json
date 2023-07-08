@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "9067fd84-0aec-4214-b420-63b1ac13fe98",
+    "Name": "PowerAppV2->Getfilecontent,Sendanemail(V2)",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]
